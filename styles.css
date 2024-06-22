@@ -17,6 +17,7 @@ header {
 
 h1 {
     width: 455px; 
+    color: #007d7b;
     background-color: #ffffff;
 
     /* line-height: 1.25; */
@@ -173,7 +174,7 @@ figcaption {
     color:#ffffff;
     position: relative;
     bottom: 270px;
-
+}
 
 
 
