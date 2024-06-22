@@ -84,7 +84,7 @@ h2 ~ p {
 
 #contain {
     background-color: #ffffff;
-    max-width: 455px;
+    width: 455px;
     margin: auto;
 }
 
