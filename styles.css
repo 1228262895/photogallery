@@ -23,6 +23,7 @@ h1 {
     background-color: #ffffff;
     text-transform: uppercase;
     margin: auto;
+    padding-left: 2px;
 }
 
 h2 {    
@@ -322,6 +323,10 @@ h3 {
 
     button {
         width: 480px;
+    }
+
+    h1 {
+    padding-left: 10px;
     }
 
 }
