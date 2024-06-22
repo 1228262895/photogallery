@@ -293,7 +293,7 @@ h3 {
 @media screen and (min-width:880px) { 
 
     #contain {
-        max-width: 855px;
+        width: 855px;
         margin:auto;
     }
 
@@ -335,7 +335,7 @@ h3 {
 
 
     #contain {
-        max-width: 1290px;
+        width: 1290px;
     }
 
     header {
