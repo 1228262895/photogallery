@@ -8,29 +8,25 @@ header {
     background: #000000;
     width: 485px;
     height: 110px;
-    
     margin: auto;
     justify-content: center;
-
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000000;
+}
 
 h1 {
     width: 455px; 
     color: #007d7b;
     background-color: #ffffff;
-
-    /* line-height: 1.25; */
     text-transform: uppercase;
-
     margin: auto;
-
 }
 
 h2 {    
     text-align: center;
-
-    
 }
 
 #about h2 {
@@ -40,13 +36,12 @@ h2 {
 
 nav {
     width: 455px;
-    /* background-color: purple; */
     margin: auto;
     text-decoration: none;
 }
 
 nav ul {
-    padding-left: 0px;
+    padding: 0px 0px;
     display: grid;
     width: 455px;
     grid-template-columns: 1fr 1fr 1fr; 
@@ -55,14 +50,12 @@ nav ul {
 
 nav li {
     display: inline-block; 
-    margin: 0px
-    
-    /* background-color: bisque; */
-
+    margin: 0px;
 }
 
 nav a {
-    padding: 15px 30px;
+    padding: 15px 23px;
+    text-transform: uppercase;
 }
 
 nav a:hover {
@@ -71,125 +64,111 @@ nav a:hover {
 
 li a{
     color: #ffffff;
-
     text-decoration: none;
+}
+
+#about {
+    background-color: #ffffff;
+}
+
+h2 ~ p { 
+    margin-bottom: 5px;
+    margin-left: 10px;  
 }
 
 
 
-#about {
+/* Container, Frames, Figures
+---------------------------------------------------- */
+
+
+#contain {
     background-color: #ffffff;
-   
+    max-width: 455px;
+    margin: auto;
 }
 
 #contain p {
     line-height: 1.65;
 }
 
-
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #000000;
-    /* width: 1300px; */
-
-    /* max-width: 879px;  */
-
-    
-}
-
-h2 ~ p { 
-    margin-bottom: 5px;
-    margin-left: 10px;  
-    
-}
-
-#contain {
-    background-color: #ffffff;
-    max-width: 455px;
-    margin:auto;
-}
-
 #gallery { 
-
-
     width: 455px;
     background-color: #ffffff;
     display: grid; 
     grid-template-columns: 1fr;
-   
-    
-    margin:auto;
-
-
-    
+    margin: auto;
 }
 
 .frame {
-    /* background: #007d7b; */
-    /* border: 5px solid red; */
     width: 421px;
     margin: auto;
-
 }
 
 figure {
     margin: 0px;
     padding: 0px;
-
-}
-
-figure img {
-
 }
 
 
 
 
-
-
-
+/* Formatting for Figcaptions to display correctly 
+---------------------------------------------------- */
 
 figcaption {
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    /* bottom: 280px; */
-    
 }
 
 .bottomWhite figcaption {
-    color:#ffffff;
+    color: #ffffff;
     position: relative;
     bottom: 30px;
 }
 
 .bottomBlack figcaption {
-    color:#000000;
+    color: #000000;
     position: relative;
     bottom: 30px;
 }
 
 .topWhite figcaption {
-    color:#ffffff;
+    color: #ffffff;
     position: relative;
     bottom: 270px;
 }
 
+.topBlackPortrait figcaption {
+    color: #000000;
+    position: relative;
+    bottom: 620px;
+}
 
-
+.topBlackLandscape figcaption {
+    color: #000000;
+    position: relative;
+    bottom: 270px;
+}
 
 [href="#top"] {
     text-align: center;
-    padding:8px;
+    padding: 8px;
     position: fixed; 
     bottom: 0px; 
     right: 0px; 
     text-decoration: none;
-    height: 30px; 
-    width: 60px; 
+    height: 25px; 
+    width: 50px; 
     background-color: #007d7b;
 }
+
+
+
+
+/* Contact Form, Footer, Top button
+---------------------------------------------------- */
 
 [href="#top"]:hover {
     color: #007d7b;
@@ -198,30 +177,11 @@ figcaption {
 
 
 #contact {
-    /* display: inline-block; */
-    /* margin-left: auto; */
-    /* width:fit-content; */
-  
-
-    
- 
-
     margin: auto;
     text-align: center;
-
-    /* text-align: center; */
-    /* padding-left: 20px; */
     background: #000000;
-
-    /* margin-left: 10vw;
-    margin-right: 10vw; */
     min-width: 455px;
     width: 455px;
-
-    /* width: 400px; */
-    /* margin: .5rem auto; */
-    /* max-width: 800px; */
-    /* margin:auto; */
 }
 
 #contact label  {
@@ -238,42 +198,32 @@ figcaption {
 
 #contact input { 
     display: block;
-
-    /* width: 80vw; */
-
     width: 99%;
-
     max-width: 1190px;
-
     margin: auto;
-  
 }
-
 
 form {
     text-align: left;
     max-width: 1200px;
     margin: auto;
-    
 }
 
 #contact label {
     text-align: left;
+    margin-left: 15px;
     text-transform: uppercase;
 }
 
 [placeholder] {
     color: #007d7b;
     text-transform: uppercase;
-   
+    padding-left: 12px;
 } 
 
 #contact input {
     height: 40px;
-}
-
-form button {
-    /* text-align: center; */
+    color: #007d7b;
 }
 
 button {
@@ -282,38 +232,33 @@ button {
     height: 40px;
     color: #ffffff;
     background-color: #007d7b;
-
-    margin:auto;
-    
+    margin: auto;
     text-transform: uppercase;
-    font-weight: 700;
+    font-size: large;
+    font-weight: 900;
     border-radius: 8px;
     border: none;
-    
 }
 
+button:hover {
+    font-size: larger;
+}
+
+button:active {
+    color: #007d7b;
+    background-color: #ffffff;
+}
 
 footer {
-
-    margin-top: 50px;
+    margin-top: 70px;
     clear: both;
     color: #ffffff; 
-
     text-align: center;
 }
 
-
 small {
     text-transform: uppercase;
-    /* text-align: center; */
 }
-
-
-
-
-
-.bottomWhite {}
-
 
 
 /* Provided Font Sizes
@@ -333,6 +278,7 @@ h1 {
 }
 h2 {
     font-size: 2em;
+    text-transform: uppercase;
 }
 h3 {
     color:#ffffff;
@@ -341,70 +287,56 @@ h3 {
 
 
 
-
+/* For screens 880px and wider.
+-------------------------------------------- */
 
 @media screen and (min-width:880px) { 
 
     #contain {
-        
         max-width: 855px;
         margin:auto;
     }
 
-
     header {
         width: 855px;
         margin: auto; 
-        
-        
     }
 
     nav {
         width: 855px;
     }
 
-    ul li {
-        
-
-    }
-
-
     h1 {
         width: 855px; 
     }
-
-
 
     #gallery { 
         width: 855px;
         display: grid; 
         grid-template-columns: 1fr 1fr;
-    
-    
     }
-
 
     #contact {
         width: 800px;
     }
 
     button {
-        
         width: 480px;
     }
 
 }
 
+
+
+/* For screens 1300px and wider.
+-------------------------------------------- */
+
 @media screen and (min-width:1300px) { 
 
 
     #contain {
-        
         max-width: 1290px;
-    
     }
-
-
 
     header {
         width: 1300px;
@@ -416,47 +348,29 @@ h3 {
 
     nav ul {
         float: right;
-        padding-right: 10px;
     }
-/* 
-    ul li {
-        float: right;
-        padding-right: 10px;
-    }
- */
 
     h1 {
         width: 1290px; 
     }
 
-
     #gallery { 
         width: 1290px;
         display: grid; 
         grid-template-columns: 1fr 1fr 1fr;
-    
-    
     }
 
     #contact { 
         width: 1200px;
     }
 
-
     #contact input { 
-
         max-width: 1200px;
-    }
-
-    body {
-        /* justify-content: right;
-        align-items: right; */
     }
 
     button {
         
         width: 780px;
     }
-
 
 }
